@@ -37,12 +37,12 @@ extension ViewController: UITableViewDataSource {
         return cell
     }
     
-    /*func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete{
             self.data.remove(at: indexPath.row)
             self.MyTableView.reloadData()
         }
-    }*/
+    }
     /*func tableView(_ tableView: UITableView, leadingSwipeActionConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
         let edit = UIContextualAction(style: .normal, title: "Edit")
         { (contextualAction, view, actionPerformed: (Bool) -> ()) in self.performSegue(withIdentifier: "toAddztripSegue", sender: nil)

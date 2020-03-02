@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  Test
 //
-//  Created by student on 2/24/20.
-//  Copyright © 2020 student. All rights reserved.
+//  Created by Jonathan Ninan on 2/25/20.
+//  Copyright © 2020 Jonathan Ninan. All rights reserved.
 //
 
 import UIKit
