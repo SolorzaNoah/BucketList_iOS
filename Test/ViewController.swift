@@ -37,6 +37,11 @@ extension ViewController: UITableViewDataSource {
         return cell
     }
     
+    /*func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> UITableViewRowAction {
+        let delete = UITableViewRowAction(style: .destructive, title: "Delete") { (action, indexPath) in
+    }*/
+    
+    
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete{
             self.data.remove(at: indexPath.row)
@@ -45,12 +50,12 @@ extension ViewController: UITableViewDataSource {
     }
     /*func tableView(_ tableView: UITableView, leadingSwipeActionConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
         let edit = UIContextualAction(style: .normal, title: "Edit")
-        { (contextualAction, view, actionPerformed: (Bool) -> ()) in self.performSegue(withIdentifier: "toAddztripSegue", sender: nil)
+        { (contextualAction, view, actionPerformed: (Bool) -> ()) in
         }
         return UISwipeActionsConfiguration(actions: [edit])
     }*/
     
-    func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+    /*func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
         let modifyAction = UIContextualAction(style: .normal, title:  "Update", handler: { (ac:UIContextualAction, view:UIView, success:(Bool) -> Void) in
             print("Update action ...")
             success(true)
@@ -59,7 +64,7 @@ extension ViewController: UITableViewDataSource {
         modifyAction.backgroundColor = .blue
     
         return UISwipeActionsConfiguration(actions: [modifyAction])
-    }
+    }*/
 
     func newItem(){
         data.append("Hockey")
